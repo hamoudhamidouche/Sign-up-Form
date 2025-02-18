@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "CustomFont";
+    src: url("Norse-Bold.otf") format("opentype");
+}
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.left {
+    flex: 1;
+    background-image: url(kenny-eliason-lJ6iASrFAnQ-unsplash.jpg);
+    background-size: 120% 120%;
+    background-repeat: no-repeat;
+    width: 30%;
+}
+
+.logo-holder {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    background-color: rgb(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.logo-holder img {
+    height: 100%;
+}
+
+.logo-holder p {
+    font-size: 5rem;
+    font-family: CustomFont;
+    color: white;
+}
+
+.right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.053);
+}
+
+.upper{
+    font-weight: bold;
+    margin: 20px 50px 0 50px;
+}
+
+.upper p {
+    width: 55%;
+}
+
+.upper, .lower {
+    height: 30%;
+}
+
+.middle {
+    padding-left: 50px;
+    background-color: white;
+    box-shadow: 10px 5px 10px #aaaaaa;
+    margin-top: -20px;
+}
+
+#do {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+
+form p {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+form input {
+    border: 1px solid #E5E7EB;
+}
+
+form input:focus {
+    border: 1px solid blue;
+    box-shadow: 1px 3px 5px #aaaaaa;
+    outline: none; 
+}
+
+form input[type="password"]:invalid {
+    border: 1px solid red;
+    outline: none; 
+}
+
+.lower {
+    padding-left: 50px;
+    margin-top: 20px;
+}
+
+.lower button {
+    border: none;
+    background-color: #3883F6;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+.lower span {
+    color: #3883F6;
+}
